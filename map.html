@@ -49,7 +49,7 @@
 		var load =  document.getElementById('rsvpSubmit').appendChild(spinner.el);
 		$.get(url, function(data) {  })
 		.done(function(data ) {
-			console.log('Success. Data ' + data.result);
+			//console.log('Success. Data ' + data.result);
 			noty({type: 'success', text: 'We got your RSVP! Cant wait', modal:true, timeout: 5000, layout: 'center',
 			callback: { onClose: function() {document.getElementById('rsvpSubmit').reset();} } });
 			spinner.stop();
