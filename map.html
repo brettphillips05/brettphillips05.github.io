@@ -39,7 +39,7 @@
 	}).addTo(mymap);
 
 	//var sendRsvp =
-
+$(document).ready( function() {
 	$("form").on("submit", function (event) {
 		event.preventDefault();
 		var rsvp = $(this).serialize();
@@ -55,7 +55,7 @@
 			}
 		);
 		spinner.stop();
-	});
+	}); });
 
 
 	</script>
