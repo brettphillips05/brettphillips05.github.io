@@ -58,7 +58,7 @@ $(document).ready( function() {
 		.done(function(data ) {
 			$("#testout").append("Did something in done function! ");
 		})
-		.fail(function(e) { 	$("#testout").append("Did something in fail function! Error info: " + JSON.stringify(e)); })
+		.fail(function(e,o) { 	$("#testout").append("Did something in fail function! Error info: " + JSON.stringify(e) + "  other stuff: " + JSON.stringify(o)); })
 		.always(function(data) { 	$("#testout").append("Did something in always function! Data " + JSON.stringify(data)); });
 		spinner.stop();
 	});
