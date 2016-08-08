@@ -20,7 +20,7 @@
 		</div>
 	</form>
 
-	<div id="mapid" style=" height: 600px; position: relative;" ></div>
+	<div id="mapid" style="" ></div>
 
 	<script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -38,6 +38,11 @@
 		id: 'mapbox.streets',
 		accessToken: 'pk.eyJ1IjoiYnJldHRwaGlsbGlwcyIsImEiOiJjaXJrdDVhanMwMDNtZmxtODIzMHlrMHF4In0.V3BbUwlK-uvMpf6r5NUisw'
 	}).addTo(mymap);
+
+	$(window).on("resize", function() {
+    $("#mapid").height($(window).height()-300);
+    mymap.invalidateSize();
+}).trigger("resize");
 
 	function mobileSuccess(data) {
 		console.log('mobile success hit');
