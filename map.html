@@ -48,15 +48,20 @@ $(document).ready( function() {
 		var url = 'https://script.google.com/macros/s/AKfycbwtz1-M-ODXzez2acum_syfiWbnkt8NsHLw8IC66SQksmy7dAE/exec?' + rsvp + '&Timestamp';
 		var spinner = new Spinner({left: '5%', top: '30%' }).spin();
 		var load =  document.getElementById('rsvpSubmit').appendChild(spinner.el);
-		$.get(url, function(data) { $("#testout").text("Did something!");			noty({type: 'success', text: 'We got your RSVP! Cant wait', modal:true, timeout: 5000, layout: 'center',
+		$.get(url,
+			function(data) {
+				$("#testout").text("Did something!");
+				noty({type: 'success', text: 'We got your RSVP! Cant wait', modal:true, timeout: 5000, layout: 'center',
 					callback: { onClose: function() {document.getElementById('rsvpSubmit').reset();} }});
-
-					console.log('Success. Data ' + data.result);  })
+					console.log('Success. Data ' + data.result);
+				})
 		.done(function(data ) {
-			}
-		);
+		})
+		.fail(function() { $("#testout").text("Did something in fail!"); })
+		.always(function() { $("#testout").text("Did something in always!"); });
 		spinner.stop();
-	}); });
+	}); 
+});
 
 
 	</script>
