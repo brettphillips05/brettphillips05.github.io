@@ -39,6 +39,14 @@
 		accessToken: 'pk.eyJ1IjoiYnJldHRwaGlsbGlwcyIsImEiOiJjaXJrdDVhanMwMDNtZmxtODIzMHlrMHF4In0.V3BbUwlK-uvMpf6r5NUisw'
 	}).addTo(mymap);
 
+	function mobileSuccess(data) {
+		$("#testout").append("Did something in function! ");
+		noty({type: 'success', text: 'We got your RSVP! Cant wait', modal:true, timeout: 5000, layout: 'center',
+			callback: { onClose: function() {document.getElementById('rsvpSubmit').reset();} }});
+			console.log('Success. Data ' + JSON.stringify(data));
+	$("#testout").append("Did something in done function! ");
+	};
+
 	//var sendRsvp =
 $(document).ready( function() {
 	$("form").on("submit", function (event) {
@@ -48,7 +56,7 @@ $(document).ready( function() {
 		var urlL = 'https://script.google.com/macros/s/AKfycbwtz1-M-ODXzez2acum_syfiWbnkt8NsHLw8IC66SQksmy7dAE/exec?callback=mobileSuccess&' + rsvp + '&Timestamp';
 		var spinner = new Spinner({left: '5%', top: '30%' }).spin();
 		var load =  document.getElementById('rsvpSubmit').appendChild(spinner.el);
-		$.ajax({method: 'get', url: urlL, dataType: 'json', jsonp: 'false', jsonpCallback: 'mobileSuccess'})
+		$.ajax({method: 'get', url: urlL, dataType: 'jsonp'}) // , jsonp: 'false', jsonpCallback: 'mobileSuccess'
 		.done(function(data ) {
 				$("#testout").append("Did something in function! ");
 				noty({type: 'success', text: 'We got your RSVP! Cant wait', modal:true, timeout: 5000, layout: 'center',
@@ -59,15 +67,8 @@ $(document).ready( function() {
 		.fail(function(e,o, et) { 	$("#testout").append("Did something in fail function! Error info: " + JSON.stringify(e) + "  other stuff: " + JSON.stringify(o) + "  error thrown: " + JSON.stringify(et)); })
 		.always(function(data) { 	$("#testout").append("Did something in always function! Data " + JSON.stringify(data)); });
 		spinner.stop();
-
 	});
-	function mobileSuccess(data) {
-		$("#testout").append("Did something in function! ");
-		noty({type: 'success', text: 'We got your RSVP! Cant wait', modal:true, timeout: 5000, layout: 'center',
-			callback: { onClose: function() {document.getElementById('rsvpSubmit').reset();} }});
-			console.log('Success. Data ' + JSON.stringify(data));
-	$("#testout").append("Did something in done function! ");
-	}
+
 });
 
 
