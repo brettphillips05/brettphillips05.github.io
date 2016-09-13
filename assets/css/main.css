@@ -3253,7 +3253,7 @@
 		background-attachment: scroll !important;
 	}
 
-	body.is-touch #rsvp {
+	body.is-touch #rsvpForm {
 		background-attachment: fixed;
 	}
 
