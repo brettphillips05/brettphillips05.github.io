@@ -233,7 +233,7 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.3.8/packaged/jquery.noty.packaged.min.js"></script>
 
 			<script>
-			$('button').on('click touchstart')((function() {
+			$('button').on('click touch', function() {
 				var otherButton = $(this).attr('id') == 'rsvpNo' ? '#rsvpYes' : '#rsvpNo';
 				if($(otherButton).children('i').hasClass('active')) {
 					$(otherButton).children('i').toggleClass('active');
