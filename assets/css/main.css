@@ -2905,6 +2905,11 @@
 		background-repeat: no-repeat;
 	}
 
+	#rsvpYes,
+	#rsvpNo {
+		cursor: pointer;
+	}
+
 	#rsvpYes span {
 		display:inherit;
 	}
@@ -3251,10 +3256,6 @@
 
 	body.is-touch .main {
 		background-attachment: scroll !important;
-	}
-
-	body.is-touch #rsvpForm {
-		background-attachment: fixed;
 	}
 
 	body.is-touch .poptrox-popup .nav-next,
