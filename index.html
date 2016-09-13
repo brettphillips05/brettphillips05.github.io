@@ -1,1 +1,295 @@
-Hello world
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Gabby &amp; Brett 2016</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+
+				<!-- Logo -->
+					<h1 id="logo">Gabby <i class="fa fa-heart" style="color:red" aria-hidden="true"></i> Brett</h1>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Intro</a></li>
+							<li><a href="#rsvp">RSVP</a></li>
+							<li><a href="#faq">FAQ</a></li>
+						</ul>
+					</nav>
+
+			</header>
+
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen dark">
+				<div class="content container" style="vertical-align: top;">
+					<header>
+						<h2 id="example1">Gabby <i class="fa fa-heart" style="color:#cc0000; font-size: 75%;" aria-hidden="true"></i> Brett</h2>
+					</header>
+					<!--<div style="background:rgba(248,248,255,0.75); padding-left:10px; padding-right:10px; display: inline-block; border-radius: 15px;" >-->
+					<p style="font-size:85%; margin-bottom: 0; padding: 5px;" >We said “I do” and have celebrated at all our favorite places. Now the only thing we need is all our favorite people like you!</p>
+				<!--</div>-->
+
+				<p style="margin-top: 1em; margin-bottom: 0.3em; font-size: 150%;"><strong>Saturday October 29th 2016 &bull; 6 pm</strong></p>
+				<p style="font-size: 125%"><strong><a href="https://www.google.com/maps/dir/%27%27/Logan+Square+Auditorium,+2539+North+Kedzie+Boulevard,+Chicago,+IL+60647/@41.927623,-87.7768719,12z/" target="_blank">Logan Square Auditorium Chicago, IL</a></strong></p>
+
+					<!--
+
+					<div style="background:rgba(248,248,255,.65); padding-left:10px; padding-right:10px; display: inline-block; border-radius: 15px;" >
+
+					</div>
+
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
+					</footer>-->
+				</div>
+			</section>
+
+			<!-- One -->
+				<section id="one" class="main style2 right dark fullscreen">
+					<div class="content box style2">
+						<header>
+							<h2>What to Expect</h2>
+						</header>
+						<p>This is not your typical wedding reception since we already had our ceremony a year ago. Instead,  just imagine a party in our home where everyone is a little more dressed up than usual - Celebrating, mingling and meeting all our loved ones gathered in one place. That's the feel we're going for. We won't be having a sit down dinner, but rather passed appetizers and stations with foods inspired by our “Locations of Love” that correspond with the invitation. Walk around, eat, drink, meet our friends and family, and just have fun! We’re so grateful and happy that you are joining us to celebrate our marriage!</p>
+					</div>
+					<a href="#rsvp" class="button style2 down anchored">Next</a>
+				</section>
+
+
+			<!-- RSVP -->
+				<section id="rsvp" class="main style3 secondary">
+					<div class="content container">
+						<header>
+							<h2>RSVP</h2>
+						</header>
+						<div class="box container 75%">
+
+						<!-- Contact Form -->
+								<form method="post" id="rsvpForm" action="#">
+									<div id="attending" style="font-size: 15pt"><p>Will you be attending?</p></div>
+									<div class="row">
+										<div class="6u" style="text-align:right;"><button type="button" id="rsvpYes" value="yes"><span>Yes</span><i class="em em-blush"></i></button></div>
+										<div class="6u"><button type="button" id="rsvpNo" value="no"><span>No</span><i class="em em-pensive"></i></button></div>
+										<input type="hidden" name="attending" id="attending" />
+									</div>
+									<div class="row 50%">
+										<div class="12u"><input type="text" name="name" placeholder="Name(s)" /></div>
+									</div>
+									<div class="row 50%">
+										<div class="12u"><textarea name="message" placeholder="Message" rows="1"></textarea></div>
+									</div>
+									<div class="row">
+										<div class="12u">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- One
+				<section id="four" class="main style4 right dark fullscreen">
+					<div class="content container">
+					<div id="mapid" style="height: 800px; position: relative;" ></div>
+				</div>
+				</section> -->
+
+
+		<!-- Two
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Who I Am</h2>
+					</header>
+					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
+					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
+					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section> -->
+
+		<!-- Work -->
+			<section id="faq" class="main style3 primary">
+				<div class="content container">
+					<header>
+						<h2>FAQ</h2>
+						<p>Understandably, we have been asked several questions. Here are some of the frequent questions people have asked. If you have a question that does not appear below, please don’t hesitate to text/call/email Gabby or Brett.</p>
+					</header>
+
+							<section class="left">
+								<header><h3>What/where is this place Logan Square Auditorium?</h3></header>
+								<p>Although it’s a great spot to catch a movie and grab a drink, this is <strong>NOT</strong> the more commonly known Logan Theater. Logan Square Auditorium is a historic ballroom that was built in 1915. It now serves as a banquet hall and concert venue and is located on the third floor of a multi-purpose building. The address is 2539 N. Kedzie Blvd. and the entrance is through a glass door next to Lula Cafe. </p>
+							</section>
+
+							<section class="right">
+								<header><h3>How do I get there?</h3></header>
+								<p>Logan Auditorium is conveniently located two blocks from the Logan Square stop of the Blue Line. Otherwise Uber is always a great option. If you have to drive, there will be a parking lot available for a limited amount of cars. </p>
+							</section>
+
+							<section class="left">
+								<header><h3>If I’m driving, where should I park? Will there be valet?</h3></header>
+								<p>
+									There is no valet. If you are driving, there is a parking lot behind the building that can fit 30 cars. You will have to walk around the building, about a block, to get to the entrance.
+								</p>
+							</section>
+
+							<section class="right">
+								<header><h3>What is the attire? What will Gabby and Brett be wearing?</h3></header>
+								<p>
+									Please wear business casual attire. Gabby and Brett will be dressed up- this is a celebration of our marriage after all!
+								</p>
+							</section>
+							<section class="left">
+								<header><h3>It’s Halloween weekend! Can I wear a costume?</h3></header>
+								<p>
+									 For those of you who care enough that we are taking up your Halloween weekend, 1) Thank you for sacrificing the evening to celebrate with us, and 2) Yes, if it’s that important to you, you can certainly wear a costume.
+								</p>
+							</section>
+
+
+							<section class="right">
+								<header><h3>Are we going out after?</h3></header>
+								<p>
+									Of course! Gabby and Brett will have to clean up a bit and help close up, but we plan to go out after. There are several bars in the area. Location of meeting up after is TBD.
+								</p>
+							</section>
+
+							<section class="left">
+								<header><h3>Can I bring my kid(s)?</h3></header>
+								<p>
+									That's up to your discrestion. We do not discourage children but please keep in mind this is an adult-centric party in that there will be drinking and a large amount of people.
+								</p>
+							</section>
+							<section class="right">
+								<header><h3>Will there be dancing?</h3></header>
+								<p>
+									There better be! We will not be having a DJ, but will instead have a playlist of our favorite songs ranging the decades and genres. We’ve been to weddings where barely anyone dances and that;s no fun so please do your part in making our dance floor the place to be!
+								</p>
+							</section>
+
+							<section class="left">
+								<header><h3>Where did you register?</h3></header>
+								<p>
+									We did not register anywhere. We are leaving gift-giving to your discretion.
+								</p>
+							</section>
+							<section class="right">
+								<header><h3>Did you know your stupid wedding party falls on game 4 of the World Series?</h3></header>
+								<p>
+									Yes, we are aware, and yes we know (to Brett’s chagrin) that the Cubs might be playing and win the World Series that evening. Should this happen, we will do our best to have a way for everyone to watch. Go Cubbies!
+								</p>
+							</section>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+					<ul class="actions">
+						<li>Made with <span class="icon fa-heart" /></li>
+						<li>Excited to see everyone!</li>
+					</ul>
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.3.8/packaged/jquery.noty.packaged.min.js"></script>
+
+			<script>
+			$('button').click(function() {
+				var otherButton = $(this).attr('id') == 'rsvpNo' ? '#rsvpYes' : '#rsvpNo';
+				if($(otherButton).children('i').hasClass('active')) {
+					$(otherButton).children('i').toggleClass('active');
+					$(otherButton).children('span').toggleClass('inactive');
+				}
+				$(this).children("i").toggleClass("active");
+				$(this).children("span").toggleClass("inactive");
+				//$("#attending").append($(this).val());
+				$("input[name=attending]").val($(this).val());
+			});
+
+				//var mymap = L.map('mapid').setView([41.92775, -87.70672], 13);
+
+				//L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/256/{z}/{x}/{y}?access_token={accessToken}', { //'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}'
+					//maxZoom: 20,
+					//attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+					//	'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+					//	'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+					//id: 'mapbox.streets',
+					//accessToken: 'pk.eyJ1IjoiYnJldHRwaGlsbGlwcyIsImEiOiJjaXJrdDVhanMwMDNtZmxtODIzMHlrMHF4In0.V3BbUwlK-uvMpf6r5NUisw'
+				//}).addTo(mymap);
+
+				function mobileSuccess(data) {
+					console.log('mobile success hit');
+				};
+
+				$("form").on("submit", function (event) {
+					event.preventDefault();
+					var rsvp = $(this).serialize();
+					console.log(rsvp + ' what is serialized');
+					var urlL = 'https://script.google.com/macros/s/AKfycbwtz1-M-ODXzez2acum_syfiWbnkt8NsHLw8IC66SQksmy7dAE/exec?' + rsvp + '&Timestamp';
+					var spinner = new Spinner({left: '50%', top: '50%', scale: 3, color: 'white' }).spin();
+					var load =  document.getElementById('rsvpForm').appendChild(spinner.el);
+					$('#rsvp div.content div.box').addClass('overlay');
+					$.ajax({method: 'get', url: urlL, dataType: 'jsonp', jsonp:'callback', jsonpCallback:'mobileSuccess'}) // , jsonp: 'false', jsonpCallback: 'mobileSuccess'
+					.done(function(data ) {
+							//$("#testout").append("Did something in function! ");
+							noty({type: 'success', text: 'We got your RSVP! Cant wait', modal:true, timeout: 5000, layout: 'center',
+								callback: {
+									onClose:
+									function() {
+										document.getElementById('rsvpForm').reset();
+										$('button[id^=rsvp] span').each(function(i, el) { $(el).removeClass('inactive'); });
+										$('button[id^=rsvp] i').each(function(i, el) { $(el).removeClass('active'); });
+							} }});
+								var res = JSON.parse(data);
+								console.log('Success. Data ' +  res.result );
+						$//("#testout").append("Did something in done function! ");
+					})
+					.fail(function(e,o, et) { 	$//("#testout").append("Did something in fail function! Error info: " + JSON.stringify(e) + "  other stuff: " + JSON.stringify(o) + "  error thrown: " + JSON.stringify(et));
+				})
+					.always(function(data) { //	$("#testout").append("Did something in always function! Data " + JSON.stringify(data));
+					spinner.stop();
+					$('#rsvp div.content div.box').removeClass('overlay');
+				});
+			});
+			</script>
+	</body>
+</html>
