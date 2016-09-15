@@ -86,7 +86,6 @@
 								<form method="post" id="rsvpForm" action="#">
 									<div id="attending" style="font-size: 15pt"><p>Will you be attending?</p></div>
 									<div class="row">
-										<div id="textout" />
 										<div class="6u" style="text-align:right;"><button type="button" id="rsvpYes" value="yes"><span>Yes</span><i class="em em-blush"></i></button></div>
 										<div class="6u"><button type="button" id="rsvpNo" value="no"><span>No</span><i class="em em-pensive"></i></button></div>
 										<input type="hidden" name="attending" id="attending" />
@@ -236,7 +235,6 @@
 			<script>
 			$('button').on('click touchstart pointerdown', function(e) {
 				e.preventDefault();
-				$("#textout").append("Did something in function! ");
 				var otherButton = $(this).attr('id') == 'rsvpNo' ? '#rsvpYes' : '#rsvpNo';
 				if($(otherButton).children('i').hasClass('active')) {
 					$(otherButton).children('i').toggleClass('active');
