@@ -234,7 +234,7 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.3.8/packaged/jquery.noty.packaged.min.js"></script>
 
 			<script>
-			$('button').on('click touch', function(e) {
+			$('button').on('click touchstart', function(e) {
 				e.preventDefault();
 				$("#textout").append("Did something in function! ");
 				var otherButton = $(this).attr('id') == 'rsvpNo' ? '#rsvpYes' : '#rsvpNo';
