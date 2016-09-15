@@ -2914,9 +2914,9 @@
 		display:inherit;
 	}
 
-	#rsvpYes:hover span {
+	/*#rsvpYes:hover span {
 		display: none;
-	}
+	}*/
 
 	#rsvpYes .em.em-blush {
 		display: none;
@@ -2929,9 +2929,9 @@
 		display:inherit;
 	}
 
-	#rsvpNo:hover span {
+	/*#rsvpNo:hover span {
 		display: none;
-	}
+	}*/
 
 	#rsvpNo .em.em-pensive {
 		display: none;
